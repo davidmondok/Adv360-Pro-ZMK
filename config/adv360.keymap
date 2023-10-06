@@ -57,7 +57,7 @@
             bindings = <
 &kp F1  &kp F2  &kp F3                &kp F4              &kp F5                 &kp F6         &tog 1                                                                    &mo 3   &kp F7         &kp F8                &kp F9              &kp F10                &kp F11  &kp F12
 &trans  &trans  &kp LS(LA(LC(LEFT)))  &kp LS(LC(LA(UP)))  &kp LS(LA(LC(RIGHT)))  &kp LS(LG(F))  &none                                                                     &none   &kp LG(LS(F))  &kp LS(LA(LC(LEFT)))  &kp LS(LA(LC(UP)))  &kp LS(LA(LC(RIGHT)))  &trans   &trans
-&trans  &trans  &kp LG(LA(LEFT))      &kp LA(LG(F))       &kp LA(LG(RIGHT))      &kp LG(F)      &none   &trans  &trans      &kp LS(LG(LA(LC(S))))  &kp LS(LA(LC(LG(A))))  &none   &kp LG(F)      &kp LA(LG(LEFT))      &kp LA(LG(F))       &kp LA(LG(RIGHT))      &trans   &trans
+&trans  &trans  &kp LG(LA(LEFT))      &kp LA(LG(F))       &kp LA(LG(RIGHT))      &kp LG(F)      &none   &trans  &trans      &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(A))))  &none   &kp LG(F)      &kp LA(LG(LEFT))      &kp LA(LG(F))       &kp LA(LG(RIGHT))      &trans   &trans
 &trans  &trans  &kp LA(LC(LEFT))      &kp LS(LG(SPACE))   &kp LA(LC(RIGHT))      &trans                         &trans      &trans                                                &trans         &kp LC(LA(LEFT))      &kp LS(LG(SPACE))   &kp LA(LC(RIGHT))      &trans   &trans
 &trans  &trans  &trans                &trans              &trans                                &trans  &trans  &trans      &trans                 &trans                 &trans                 &trans                &trans              &trans                 &trans   &trans
             >;
