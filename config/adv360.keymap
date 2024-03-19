@@ -55,11 +55,11 @@
 
         layer_fn {
             bindings = <
-&kp F1  &kp F2            &kp F3            &kp F4             &kp F5             &kp F6  &tog 1                                                                            &mo 3   &kp F7  &kp F8                &kp F9              &kp F10                &kp F11  &kp F12
-&trans  &kp LS(LG(LEFT))  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LS(LG(RIGHT))  &trans  &none                                                                             &none   &trans  &kp LS(LA(LC(LEFT)))  &kp LS(LA(LC(UP)))  &kp LS(LA(LC(RIGHT)))  &trans   &trans
-&trans  &kp LG(LEFT)      &kp LA(LEFT)      &kp LA(RIGHT)      &kp LG(RIGHT)      &trans  &none    &trans  &trans             &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(A))))  &none   &trans  &kp LA(LG(LEFT))      &kp LA(LG(F))       &kp LA(LG(RIGHT))      &trans   &trans
-&trans  &trans            &kp LG(X)         &kp LG(C)          &kp LG(V)          &trans                   &kp LS(LG(Z))      &trans                                                &trans  &kp LC(LA(LEFT))      &kp LS(LG(SPACE))   &kp LA(LC(RIGHT))      &trans   &trans
-&trans  &trans            &kp CAPS          &trans             &kp LA(GRAVE)              &kp DEL  &trans  &kp LG(Z)          &trans                 &trans                 &trans          &kp LG(LA(UP))        &kp LA(LG(DOWN))    &trans                 &trans   &trans
+&kp F1  &kp F2            &kp F3            &kp F4             &kp F5             &kp F6  &tog 1                                                                               &mo 3   &kp F7  &kp F8                &kp F9              &kp F10                &kp F11  &kp F12
+&trans  &kp LS(LG(LEFT))  &kp LS(LA(LEFT))  &kp LS(LA(RIGHT))  &kp LS(LG(RIGHT))  &trans  &none                                                                                &none   &trans  &kp LS(LA(LC(LEFT)))  &kp LS(LA(LC(UP)))  &kp LS(LA(LC(RIGHT)))  &trans   &trans
+&trans  &kp LG(LEFT)      &kp LA(LEFT)      &kp LA(RIGHT)      &kp LG(RIGHT)      &trans  &none    &trans     &trans             &kp LS(LA(LC(LG(S))))  &kp LS(LA(LC(LG(A))))  &none   &trans  &kp LA(LG(LEFT))      &kp LA(LG(F))       &kp LA(LG(RIGHT))      &trans   &trans
+&trans  &trans            &kp LG(X)         &kp LG(C)          &kp LG(V)          &trans                      &kp LS(LG(Z))      &trans                                                &trans  &kp LC(LA(LEFT))      &kp LS(LG(SPACE))   &kp LA(LC(RIGHT))      &trans   &trans
+&trans  &trans            &kp CAPS          &trans             &kp LA(GRAVE)              &kp DEL  &kp SPACE  &kp LG(Z)          &trans                 &trans                 &trans          &kp LG(LA(UP))        &kp LA(LG(DOWN))    &trans                 &trans   &trans
             >;
         };
 
