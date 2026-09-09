@@ -55,14 +55,20 @@ CONFIG_ZMK_HID_REPORT_TYPE_NKRO=y
 CONFIG_ZMK_HID_CONSUMER_REPORT_USAGES_BASIC=y
 #BLE connection parameters (explicit; ZMK's default latency is 30)
 # Latency N lets the keyboard skip N connection events before it must answer.
-# At 30 that is 465 ms of permitted silence at the 15 ms interval macOS picks.
-# A key-up report delayed that long makes macOS auto-repeat, turning one
-# keypress into 10-20 characters. 10 caps the worst case at 165 ms, which is
-# below the 225 ms auto-repeat threshold, at ~3x the idle radio wakeups.
+# At 30 that is 465 ms of silence, long enough that a delayed key-up makes
+# macOS auto-repeat and one keypress becomes 10-20 characters.
+#
+# MIN_INT must be 12, not ZMK's default 6. With 6 (7.5 ms) macOS ignores the
+# requested latency and forces 0, which fixes the bursts but costs ~31x the
+# idle radio wakeups. See zmkfirmware/zmk#2661.
+#
+# macOS switches the interval between 15 ms and 30 ms on its own, so size the
+# latency against the 30 ms case: 5 gives (5+1) x 30 = 180 ms worst case,
+# below the 225 ms auto-repeat threshold, at ~6x fewer wakeups than latency 0.
 CONFIG_BT_GAP_PERIPHERAL_PREF_PARAMS=y
-CONFIG_BT_PERIPHERAL_PREF_MIN_INT=6
+CONFIG_BT_PERIPHERAL_PREF_MIN_INT=12
 CONFIG_BT_PERIPHERAL_PREF_MAX_INT=12
-CONFIG_BT_PERIPHERAL_PREF_LATENCY=10
+CONFIG_BT_PERIPHERAL_PREF_LATENCY=5
 CONFIG_BT_PERIPHERAL_PREF_TIMEOUT=400
 
 CONFIG_BUILD_OUTPUT_UF2=y
